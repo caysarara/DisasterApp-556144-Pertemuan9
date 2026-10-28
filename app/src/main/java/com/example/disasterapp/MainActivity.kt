@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapterDisaster = DisasterAdapter()
+        val adapterDisaster = DisasterAdapter(generateDummy())
 
         with(binding) {
             rvDisaster.apply {

@@ -15,10 +15,10 @@ class DisasterAdapter(private val listDisaster: List<Disaster>)
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return listDisaster.size
     }
     override fun onBindViewHolder(holder: ItemDisasterViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(listDisaster[position])
     }
 
     inner class ItemDisasterViewHolder(private val binding: ItemDisasterBinding) :
