@@ -42,14 +42,14 @@ class MainActivity : AppCompatActivity() {
 
     fun generateDummy(): List<Disaster> {
         return listOf(
-            Disaster(nameDisaster = "Tsunami", disasterType = "Natural"),
-            Disaster(nameDisaster = "Volcanic Eruption", disasterType = "Natural"),
-            Disaster(nameDisaster = "Earthquake", disasterType = "Natural"),
-            Disaster(nameDisaster = "Flood", disasterType = "Natural"),
-            Disaster(nameDisaster = "Fire", disasterType = "Natural"),
-            Disaster(nameDisaster = "Nuclear Accident", disasterType = "Man-made"),
-            Disaster(nameDisaster = "Terrorist Attack", disasterType = "Man-made"),
-            Disaster(nameDisaster = "War", disasterType = "Man-made")
+            Disaster(nameDisaster = "Tsunami", disasterType = "Natural", imageDisaster = R.drawable.tsunami),
+            Disaster(nameDisaster = "Volcanic Eruption", disasterType = "Natural", imageDisaster = R.drawable.meletus),
+            Disaster(nameDisaster = "Earthquake", disasterType = "Natural", imageDisaster = R.drawable.gempa_bumi),
+            Disaster(nameDisaster = "Flood", disasterType = "Natural", imageDisaster = R.drawable.banjir),
+            Disaster(nameDisaster = "Fire", disasterType = "Natural", imageDisaster = R.drawable.kebakaran),
+            Disaster(nameDisaster = "Nuclear Accident", disasterType = "Man-made", imageDisaster = R.drawable.nuklir),
+            Disaster(nameDisaster = "Terrorist Attack", disasterType = "Man-made", imageDisaster = R.drawable.teroris),
+            Disaster(nameDisaster = "War", disasterType = "Man-made", imageDisaster = R.drawable.war)
         )
     }
 }

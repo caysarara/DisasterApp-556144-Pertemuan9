@@ -3,7 +3,6 @@ package com.example.disasterapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.disasterapp.databinding.ActivityMainBinding
 import com.example.disasterapp.databinding.ItemDisasterBinding
 
 typealias OnClickDisaster = (Disaster) -> Unit
@@ -27,6 +26,7 @@ class DisasterAdapter(private val listDisaster: List<Disaster>, private val onCl
 
         fun bind(data: Disaster) {
             with(binding) {
+                imgDisaster.setImageResource(data.imageDisaster)
                 txtDisasterName.text = data.nameDisaster
                 txtDisasterType.text = data.disasterType
                 itemView.setOnClickListener {
